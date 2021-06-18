@@ -10,5 +10,5 @@ git  push bitbucket --all;
 
 git  push gitlab --all;
  
-echo "Pusshing to all complete"
+echo "Pusshing to all complete test"
 
