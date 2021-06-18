@@ -1,4 +1,4 @@
 hhhhhhhhhhhhhhoooooooooooooooooooootttttttttttffffffffffffffiiiiiiiiiiiiiixxxxxxxxxxxxx
 
 -------------------------------
-ooooonnnnnnlllyyyy MASTER ssh
+ooooonnnnnnlllyyyy MASTER ssh +IP
