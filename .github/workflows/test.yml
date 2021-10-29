@@ -1,0 +1,29 @@
+name: My_name
+on: push
+jobs:
+  run:
+    name: Compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: echo "test push" > push
+
+        
+        
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *
+          git commit -m "Built files test"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+         ## github_token: ${{ secrets.GITHUB_TOKEN }}
+         branch: dev
